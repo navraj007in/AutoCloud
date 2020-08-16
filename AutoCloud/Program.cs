@@ -19,7 +19,7 @@ namespace AutoCloud
         static async Task Main(string[] args)
         {
             string subscriptionId = Environment.GetEnvironmentVariable("AZURE_SUBSCRIPTION_ID");
-
+            Console.WriteLine("Subscription ID:"+subscriptionId);
             var credential = new DefaultAzureCredential();
 
             var resourcesManagementClient = new ResourcesManagementClient(subscriptionId, credential);

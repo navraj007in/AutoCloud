@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoCloud", "AutoCloud\AutoCloud.csproj", "{2D0D86E4-E3F1-4A55-8567-91C3FA4FDE73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneCloud", "OneCloud\OneCloud.csproj", "{4AD7A09F-6820-484B-A922-8735E4C1B1E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D0D86E4-E3F1-4A55-8567-91C3FA4FDE73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D0D86E4-E3F1-4A55-8567-91C3FA4FDE73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D0D86E4-E3F1-4A55-8567-91C3FA4FDE73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D0D86E4-E3F1-4A55-8567-91C3FA4FDE73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AD7A09F-6820-484B-A922-8735E4C1B1E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AD7A09F-6820-484B-A922-8735E4C1B1E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AD7A09F-6820-484B-A922-8735E4C1B1E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AD7A09F-6820-484B-A922-8735E4C1B1E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
