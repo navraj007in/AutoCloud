@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+<PackageReference Include="Azure.Identity" Version="1.2.0" />
+    <PackageReference Include="Azure.ResourceManager.Resources" Version="1.0.0-preview.1" />
+    <PackageReference Include="Azure.ResourceManager.Storage" Version="1.0.0-preview.1" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.5.0" />
+  </ItemGroup>
+</Project>
