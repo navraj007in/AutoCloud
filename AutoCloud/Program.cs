@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 using AccessTier = Azure.ResourceManager.Storage.Models.AccessTier;
 using Sku = Azure.ResourceManager.Storage.Models.Sku;
+using OneCloud;
 
 namespace AutoCloud
 {
@@ -41,7 +42,16 @@ namespace AutoCloud
             {
                 case 1:
                     Console.WriteLine("Listing your resources");
-                    await CreateResourceGroupAsync(resourcesManagementClient);
+                    //await CreateResourceGroupAsync(resourcesManagementClient);
+                    var newrg = await OneCloud.ResourceGroup.Create("onecloud-rg",OneCloud.Region.WestUS1);
+                    if(newrg!=null)
+                    {
+                        Console.WriteLine("New Resource Group Created:"+ newrg.Name);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Failed to create Resource Group");
+                    }
                     break;
                 default:
                     break;
@@ -52,7 +62,7 @@ namespace AutoCloud
         {
             string resourceGroupName = RandomName("rg", 20);
             Console.WriteLine($"Creating resource group {resourceGroupName}...");
-            await resourcesManagementClient.ResourceGroups.CreateOrUpdateAsync(resourceGroupName, new ResourceGroup(ResourceRegion));
+            await resourcesManagementClient.ResourceGroups.CreateOrUpdateAsync(resourceGroupName, new Azure.ResourceManager.Resources.Models. ResourceGroup(ResourceRegion));
             Console.WriteLine("Done!");
 
             return resourceGroupName;
